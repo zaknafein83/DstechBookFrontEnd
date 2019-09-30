@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>PrimeFaces Hello World Example</title>
+</h:head>
+
+<h:body>
+	<p:dataTable var="book" value="#{bookListView.listaLibri()}">
+
+
+		<p:column headerText="Titolo">
+			<h:outputText value="#{book.title}" />
+		</p:column>
+
+		<p:column headerText="Autore">
+			<h:outputText value="#{book.author}" />
+		</p:column>
+		<p:column headerText="Anno">
+			<h:outputText value="#{book.year}" />
+		</p:column>
+	</p:dataTable>
+</h:body>
+</html>
