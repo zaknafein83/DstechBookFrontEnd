@@ -9,6 +9,7 @@ public class Book implements Serializable {
 	private String author;
 	private int year;
 	private int total_copy;
+
 	private int free_copy;
 
 	public int getFree_copy() {
